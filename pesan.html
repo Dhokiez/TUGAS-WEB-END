@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemesanan - Vioner Tailor</title>
+    <title>Pemesanan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,24 +31,23 @@
         <form action="#" method="POST">
             <label for="nama">Nama:</label>
             <input type="text" id="nama" name="nama" required>
-
             <label for="layanan">Jenis Layanan:</label>
             <select id="layanan" name="layanan">
                 <option value="jahit">Jahit Pakaian Baru</option>
                 <option value="permak">Permak Pakaian</option>
                 <option value="jahit">Jahit Seragam</option>
             </select>
-
             <label for="deskripsi">Deskripsi Pesanan:</label>
             <textarea id="deskripsi" name="deskripsi" rows="4"></textarea>
-
             <label for="kontak">Nomor WhatsApp:</label>
             <input type="text" id="kontak" name="kontak" required>
-
             <button type="submit">Kirim Pesanan</button>
         </form>
+    <div class="auth">
+    <h3>Jika Anda Ingin Memesan</h3>
+    <p>Silahkan <a href="/auth/login.html">login</a> atau <a href="/auth/register.html">register</a> terlebih dahulu</p>
+        </div>
     </section>
-
     <footer>
         <p>&copy; 2025 Vioner Tailor. All Rights Reserved.</p>
     </footer>

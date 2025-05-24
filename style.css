@@ -342,6 +342,11 @@ nav a:hover {
     overflow: hidden;  /* Sembunyikan gambar yang di luar kontainer */
 }
 
+.testimoni {
+    text-align: left ; /* Mengatur teks di kiri */
+    margin-left: 20px; /* Memberi jarak kiri */
+}
+
 /* Form Pemesanan */
 
 form {
@@ -422,11 +427,18 @@ form button:active {
 .menu-icon {
   /* menambahkan styling tambahan*/
   font-size: 28px;                    /* Ukuran ikon */
-  display: none;                     /* Sembunyikan ikon di desktop */
-  align-items: center;                 /* Vertikal center */
+  display: block;                     /* Tampilkan ikon dalam kotak untuk interaksi */
+  align-items: center;                /* Vertikal center */
   color: #fff;                        /* Menyeting warna ikon */
   cursor: pointer;                   /* Menunjukkan bahwa ini bisa diklik */
-  transition: transform 0.3s ease; /* Menambahkan animasi saat ikonnya berubah */
+  transition: transform 0.3s ease;    /* Menambahkan animasi saat ikonnya berubah */
+  padding: 10px;                      /* Memberikan ruang pada ikon */
+  z-index: 100;                       /* Agar ikon di atas menu */
+  width: 40px;                        /* Menentukan lebar area klik */
+  height: 40px;                       /* Menentukan tinggi area klik */
+  display: none;                        /* Sembunyikan ikon di desktop */
+  justify-content: center;           /* Mengatur konten di dalam ikon agar rata tengah */
+  align-items: center;         /* Mengatur konten di dalam ikon agar rata tengah */
 }
 
 footer {
@@ -436,6 +448,138 @@ footer {
     padding: 10px;
     margin-top: 30px;
 }
+
+/* form login */
+        .login-container {
+         background: #fff;
+         align-items: center;
+         padding: 2rem;
+         border-radius: 8px;
+         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+         width: 300px;
+         position: absolute; /* Menggunakan posisi absolut */
+         top: 50%; /* Mengatur posisi vertikal */
+         left: 50%; /* Mengatur posisi horizontal */
+         transform: translate(-50%, -50%); /* Memindahkan kontainer ke tengah */
+        }
+
+        /* Styling untuk kontainer hero (gambar logo) */
+.login-container .hero-img {
+    display: flex;            /* Menggunakan flexbox untuk pemusatan */
+    justify-content: center;  /* Memusatkan gambar secara horizontal */
+    align-items: center;      /* Memusatkan gambar secara vertikal */
+    margin-bottom: 2rem;      /* Memberikan jarak antara logo dan form */
+}
+
+/* Styling untuk gambar logo */
+.login-container .hero-img img {
+    max-width: 200px;         /* Ukuran maksimum gambar */
+    max-height: 200px;        /* Ukuran maksimum gambar */
+    width: 180px;              /* Menjaga proporsi gambar */
+    height: 180px;             /* Menjaga proporsi gambar */
+    object-fit: contain;      /* Menjaga gambar tetap proporsional */
+}
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 0.5rem;
+            background: #800000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background: #a52a2a;
+        }
+
+    /* form register */
+    .register-container {
+         background: #fff;
+         align-items: center;
+         padding: 2rem;
+         border-radius: 8px;
+         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+         width: 300px;
+         position: absolute; /* Menggunakan posisi absolut */
+         top: 50%; /* Mengatur posisi vertikal */
+         left: 50%; /* Mengatur posisi horizontal */
+         transform: translate(-50%, -50%); /* Memindahkan kontainer ke tengah */
+}
+
+/* Styling untuk kontainer hero (gambar logo) */
+.register-container .hero-img {
+    display: flex;            /* Menggunakan flexbox untuk pemusatan */
+    justify-content: center;  /* Memusatkan gambar secara horizontal */
+    align-items: center;      /* Memusatkan gambar secara vertikal */
+    margin-bottom: 2rem;      /* Memberikan jarak antara logo dan form */
+}
+
+/* Styling untuk gambar logo */
+.register-container .hero-img img {
+    max-width: 200px;         /* Ukuran maksimum gambar */
+    max-height: 200px;        /* Ukuran maksimum gambar */
+    width: 180px;              /* Menjaga proporsi gambar */
+    height: 180px;             /* Menjaga proporsi gambar */
+    object-fit: contain;      /* Menjaga gambar tetap proporsional */
+}
+
+
+/* Styling untuk judul form */
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Styling untuk label input */
+.register-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Styling untuk input (username, email, password) */
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+}
+
+/* Styling untuk tombol submit */
+.register-container button {
+        width: 100%;
+            padding: 0.5rem;
+            background: #800000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+/* Efek hover untuk tombol submit */
+.register-container button:hover {
+    background: #a52a2a;
+}
+
 
 /* Responsiveness */
 @media only screen and (max-width: 768px) {
@@ -466,7 +610,7 @@ footer {
 
     .btn {
         -webkit-tap-highlight-color: transparent; /* Hilangkan highlight di iOS/Android */
-  }
+    }
 
     section.pesan {
         padding: 20px;
@@ -490,15 +634,15 @@ footer {
         padding: 20px;
         font-size: 16px;
         line-height: 1.6;
-        word-spacing: normal;
+        word-spacing: normal;   
         letter-spacing: normal;
         box-sizing: border-box;
-        max-width: 100%;
+        max-width: 100%; /* Pastikan box tidak lebih lebar dari layar */
         word-break: break-word; /* agar kata tidak meluber */
     }
 
     .tulisan-tentang {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Ukuran font lebih kecil di mobile */
         margin-bottom: 10px;
         text-align: center;
     }
