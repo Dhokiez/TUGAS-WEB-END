@@ -592,7 +592,7 @@ footer {
     html, body {
         overflow-x: hidden;
         width: 100%;
-        padding-top: 120px; /* sesuaikan dengan tinggi header di mobile */
+        padding-top: 140px; /* sesuaikan dengan tinggi header di mobile */
     }
 
     header {
