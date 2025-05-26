@@ -8,7 +8,7 @@ body {
     background-blend-mode: overlay; /* Menggabungkan warna latar dan gambar dengan efek overlay */
     color: #333; /* Warna teks utama (abu tua, agar mudah dibaca di latar terang) */
     margin: 0; /* Menghapus margin default browser */
-    padding-top: 150px; /* beri jarak agar konten tidak tertutup header */
+    padding-top: 180px; /* beri jarak agar konten tidak tertutup header */
 }
 
 .home h1 {
